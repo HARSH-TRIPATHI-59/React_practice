@@ -1,17 +1,13 @@
-import Header from "./Header"
-import Footer from "./Footer"
-import Food from "./Food";
+import Card from "./card"
 function App() {
   
-   return(
+     return(
       <>
-         <Header/>
-         <Food/>
-         <Footer/>
-
+      <Card/>
+      <Card/>
       </>
-    
-   );
+        
+     );
   
 }
 
