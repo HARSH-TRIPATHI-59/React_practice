@@ -1,16 +1,20 @@
 // import styles from "./button.module.css"; //create a css as modules
 
 function Button() {
-  const styles = { //inline method for css
-    
-      backgroundColor: "hsl(200, 100%, 50%)",
-      color: "white",
-      padding: "10px 20px",
-      borderRadius: "5px",
-      border: "none",
-      cursor: "pointer",
-    
-  }
-  return( <button style = {styles}>Click Me </button>);
+  // let count = 0;
+  // const handleClick = (name) => {
+  //   if(count < 3){
+  //     count++;
+  //     console.log(`${name} you clicked me ${count} time/s`);
+  //   } else {
+  //     console.log(`${name} stop clicking me`)
+  //   }
+  // };
+
+  const handleClick = (e) => e.target.textContent = "Ouch";
+
+  // const hadnleClick2 = (name) => console.log(`${name} stop clicking me`)
+
+  return <button onClick={ (e) => handleClick(e)}>Cick Me 😊</button>;
 }
 export default Button;
